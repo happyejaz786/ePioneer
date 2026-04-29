@@ -21,7 +21,7 @@ function injectLayout() {
 
             <!-- 2. Middle: NIELIT Logo -->
             <div class="flex items-center">
-                <img src="images/nielit.jpg" alt="NIELIT Logo" class="h-10 md:h-14 bg-white p-1 rounded-md border border-gray-200 shadow-sm">
+                <img src="images/NIELIT.jpg" alt="NIELIT Logo" class="h-10 md:h-14 bg-white p-1 rounded-md border border-gray-200 shadow-sm">
             </div>
 
             <!-- 3. Right: Navigation Menu (Enlarged with Hover Underline) -->
