@@ -1,0 +1,191 @@
+/* Google Font Import for exact match */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Background for the browser so you can easily crop the card */
+body {
+    background-color: #d1d5db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Exact 800x600 Card */
+.excel-card {
+    width: 800px;
+    height: 600px;
+    background-color: #21252b;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* --- Background Curved Shapes --- */
+.curve-dark {
+    position: absolute;
+    top: -250px;
+    right: -250px;
+    width: 800px;
+    height: 800px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.curve-orange {
+    position: absolute;
+    top: -150px;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: #e67e22;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.curve-lines {
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    border: 15px solid #e67e22;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* --- Left Side Content --- */
+.content-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 50px;
+    z-index: 10;
+}
+
+.text-learn {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.text-advance {
+    color: #f1c40f; /* Yellow */
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 0.9;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+
+.text-excel {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 0.9;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+
+.text-course {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* --- Course Contents List --- */
+.list-title {
+    color: #e67e22;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.course-list {
+    list-style: none;
+}
+
+.course-list li {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.course-list li::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+/* --- CSS Excel Logo (Top Right) --- */
+.excel-logo {
+    position: absolute;
+    top: 90px;
+    right: 110px;
+    z-index: 10;
+}
+
+.logo-back {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 140px;
+    height: 180px;
+    background-color: #107c41;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.logo-front {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    width: 130px;
+    height: 130px;
+    background-color: #21a566;
+    border-radius: 10px;
+    border-bottom: 8px solid #0d6333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 85px;
+    font-weight: 900;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+}
+
+/* --- Join Now Button (Bottom Right) --- */
+.join-btn {
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+    background: linear-gradient(to bottom, #ff416c, #ff4b2b);
+    color: white;
+    font-weight: 900;
+    font-size: 36px;
+    font-style: italic;
+    padding: 10px 30px;
+    border: 2px solid #ff4b2b;
+    box-shadow: 5px 15px 25px rgba(0,0,0,0.4);
+    transform: rotate(-5deg); /* Tilted like the image */
+    text-transform: uppercase;
+    z-index: 20;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
