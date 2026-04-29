@@ -45,7 +45,7 @@ function injectLayout() {
                 </div>
                 
                 <div style="text-align: center;">
-                    <img src="https://hitwebcounter.com/counter/counter.php?page=epioneer_edu&style=0005&nbdigits=5&type=page&initCount=0" alt="Visitor Counter">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=123456&style=0005&nbdigits=5&type=page&initCount=0" alt="Visitor Counter">
                 </div>
 
                 <div style="text-align: right;">
