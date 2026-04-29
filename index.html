@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIONEER | Golden Border Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="commonstyle.css">
+</head>
+<body>
+    <!-- Header injected by logic.js -->
+    <header id="main-header"></header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        
+        <!-- Interactive 3D Hero Section -->
+        <div class="grid md:grid-cols-2 gap-10 mb-20">
+            
+            <!-- Left 3D Card (Text Section) -->
+            <div class="box-3d p-10 flex flex-col justify-center">
+                <h1 style="font-size: 3.2rem; font-weight: bold; color: #001f3f; line-height: 1.1; margin-bottom: 5px;">
+                    Welcome to ePioneer
+                </h1>
+                <p style="font-size: 1.3rem; color: #4a5568; margin-bottom: 30px; font-weight: bold;">
+                    Institute of Information Technology
+                </p>
+
+                <!-- Tagline with Blue Left Border -->
+                <p style="font-size: 1.4rem; color: #001f3f; font-weight: bold; font-style: italic; border-left: 5px solid #3b82f6; padding-left: 15px; margin-bottom: 35px;">
+                    "A Name that Spell with Confidence"
+                </p>
+
+                <!-- Info Box (Matched with your image) -->
+                <div style="background: #f4f7f9; padding: 25px; border-radius: 12px; border-bottom: 3px solid #3b82f6; margin-bottom: 40px;">
+                    <p style="font-weight: bold; color: #334155; margin-bottom: 12px; font-size: 1.1rem;">
+                        <i class="fas fa-check-double text-blue-600 mr-2"></i> NIELIT प्रमाणित शिक्षा के साथ उज्जवल भविष्य।
+                    </p>
+                    <p style="font-weight: bold; color: #001f3f; font-size: 1.15rem;">
+                        ● O-Level ● A-Level ● Tally Prime कोर्सेस।
+                    </p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex gap-4">
+                    <a href="#courses" style="background: #001f3f; color: white; padding: 16px 35px; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 5px 15px rgba(0,31,63,0.3);">
+                        COURSES OFFERED
+                    </a>
+                    <a href="#" style="border: 2px solid #4a5568; color: #001f3f; padding: 14px 35px; border-radius: 8px; font-weight: bold; text-decoration: none;">
+                        CONTACT US
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right 3D Card (Image Slider with Golden Border) -->
+            <div class="box-3d">
+                <img id="3dSlider" src="images/1.jpg" class="img-fill" alt="Education Banner">
+            </div>
+
+        </div>
+
+        <!-- Section: Interactive Features -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature-box-3d">
+                <i class="fas fa-laptop-code text-5xl text-blue-900 mb-6 transition-colors"></i>
+                <h3 class="text-2xl font-bold mb-4">Modern Labs</h3>
+                <p class="opacity-80 font-bold">High-performance workstations for practical excellence.</p>
+            </div>
+            <div class="feature-box-3d">
+                <i class="fas fa-user-graduate text-5xl text-blue-900 mb-6 transition-colors"></i>
+                <h3 class="text-2xl font-bold mb-4">Expert Faculty</h3>
+                <p class="opacity-80 font-bold">NIELIT approved instructors for quality training.</p>
+            </div>
+            <div class="feature-box-3d">
+                <i class="fas fa-file-invoice text-5xl text-blue-900 mb-6 transition-colors"></i>
+                <h3 class="text-2xl font-bold mb-4">Licensed Softs</h3>
+                <p class="opacity-80 font-bold">Complete legal software ecosystem for students.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer injected by logic.js -->
+    <footer id="main-footer"></footer>
+
+    <!-- logic.js link (Unchanged as per your request) -->
+    <script src="logic.js"></script>
+    <script>
+        // Image Slider Logic
+        const slider = document.getElementById('3dSlider');
+        let idx = 1;
+        setInterval(() => {
+            slider.style.opacity = 0;
+            setTimeout(() => {
+                idx = (idx === 1) ? 2 : 1;
+                slider.src = `images/${idx}.jpg`;
+                slider.style.opacity = 1;
+            }, 400);
+        }, 5000);
+    </script>
+</body>
+</html>

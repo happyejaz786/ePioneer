@@ -8,7 +8,7 @@ function injectLayout() {
             
             <!-- 1. Left: Main Logo & Titles -->
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='#'">
-                <img src="images/logo1.jpg" alt="ePioneer" class="h-12 md:h-16 bg-white p-1 rounded-md shadow-sm">
+                <img src="images/logo.jpg" alt="ePioneer" class="h-12 md:h-16 bg-white p-1 rounded-md shadow-sm">
                 <div>
                     <h1 class="text-white text-[1.1rem] md:text-[1.4rem] font-extrabold m-0 leading-tight uppercase tracking-wide">
                         ePioneer Compuware Pvt Ltd
